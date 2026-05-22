@@ -15,7 +15,8 @@ end addtwice;
 begin
   a := 5;
   b := 7;
-  c := (addtwice(a, b+1, 3) * 2 + 1) / (1+2);
+  write(addtwice(a, b+1, 3));
+  c := (addtwice(addtwice(a, b+1, 3), b+1, 3));
   write(c);
 
 end.
